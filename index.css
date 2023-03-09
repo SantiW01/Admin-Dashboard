@@ -1,0 +1,29 @@
+.aside {
+  display: block;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: #fffbdb;
+}
+
+.aside_title {
+  display: flex;
+  align-items: center;
+  padding-left: 3vh;
+  padding-bottom: 4vh;
+}
+
+.aside_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aside_firstList {
+  padding-bottom: 30px;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
