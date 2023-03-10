@@ -1,9 +1,47 @@
+:root {
+  color: #fff;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.header {
+  background-color: #af9fa5;
+  width: 100%;
+  grid-column: 2 / 5;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user_hello {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  justify-items: center;
+}
+
+.user_fullname {
+  justify-self: center;
+}
+
+.user_buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
 .aside {
-  display: block;
   position: fixed;
-  width: 15%;
+  width: 25%;
   height: 100%;
-  background-color: #fffbdb;
+  background-color: #ede3e4;
+  margin-left: 0%;
+  color: #000;
+  grid-column: 1 / 5;
 }
 
 .aside_title {
@@ -26,4 +64,11 @@
 li {
   list-style-type: none;
   padding: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ede3e4;
+  box-shadow: none;
 }
