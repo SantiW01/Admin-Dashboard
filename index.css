@@ -1,20 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@100&display=swap");
+
 :root {
   color: #000;
+  font-family: "Nunito Sans", sans-serif;
 }
 .dashboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 25px;
+  gap: 5px;
   height: 80%;
 }
 
 .header {
   background-color: #af9fa5;
-  width: 100%;
+  width: 88%;
   grid-column: 2 / 5;
   grid-row: 1 / 2;
-  gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -39,7 +41,7 @@
 .aside {
   position: absolute;
   width: 25%;
-  height: 95%;
+  height: 96%;
   background-color: #ede3e4;
   margin-left: 0%;
   color: #000;
@@ -110,7 +112,8 @@ main {
   grid-row: 2 / 7;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  height: 95%;
+  height: 88%;
+  width: 88%;
 }
 
 .announcements {
@@ -118,16 +121,28 @@ main {
   width: 250px;
 }
 
-.announcements-card {
+.announcements-card,
+.trending_person {
   background-color: #fff;
   padding: 10px 0px 10px 10px;
 }
 
-.announcements-card p:nth-child(-n + 2) {
+.announcements-card p:nth-child(1),
+.announcements-card p:nth-child(2) {
   border-bottom: 5px solid #ced9df;
 }
 .announcements-card,
-.card {
+.card,
+.trending_person {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.announcements,
+.trending {
+  align-self: start;
+}
+
+.trending {
+  width: 250px;
 }
