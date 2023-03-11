@@ -34,6 +34,12 @@ img {
   align-items: center;
 }
 
+.input_searcher {
+  width: 350px;
+  border-radius: 20px;
+  outline: #fff;
+}
+
 .header_presentation {
   display: flex;
   flex-direction: row;
