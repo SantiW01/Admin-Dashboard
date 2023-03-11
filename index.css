@@ -4,21 +4,41 @@
   color: #000;
   font-family: "Nunito Sans", sans-serif;
 }
+
+img {
+  height: 24px;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   gap: 5px;
   height: 80%;
+  width: 100%;
 }
 
 .header {
   background-color: #af9fa5;
-  width: 88%;
+  width: 100%;
   grid-column: 2 / 5;
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.header_searcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .user_hello {
@@ -41,7 +61,7 @@
 .aside {
   position: absolute;
   width: 25%;
-  height: 96%;
+  height: 100%;
   background-color: #ede3e4;
   margin-left: 0%;
   color: #000;
@@ -94,6 +114,12 @@
   padding-bottom: 10px;
 }
 
+.card .card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 li {
   list-style-type: none;
   padding: 5px;
@@ -113,7 +139,7 @@ main {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   height: 88%;
-  width: 88%;
+  width: 100%;
 }
 
 .announcements {
